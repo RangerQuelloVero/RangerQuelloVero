@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/main.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://kit.fontawesome.com/22b3eac961.js" crossorigin="anonymous"></script>
+    <title>Ranger</title>
+</head>
+
+<script>
+    (function () {
+      if (window.addEventListener) {
+        window.addEventListener("load", nascondi_loading_screen, false);
+      } else {
+        window.attachEvent("onload", nascondi_loading_screen);
+      }
+    })();
+  
+    function nascondi_loading_screen() {
+      var loadingScreen = document.getElementById("loading_screen");
+      loadingScreen.style.opacity = '0';
+      setTimeout(function(){ loadingScreen.style.display = 'none'; }, 500);
+    }
+</script>
+  
+<body>
+
+    <div id="loading_screen">
+        <div class="spinner"></div>
+    </div>
+      
+      
+
+    <div id="BG">
+
+        <!-- Sezione Profilo -->
+        <section id="profilo">
+          <img id="pfp" src="../sito/img/pfp.jpg" alt="pfp" >
+          <h1 id="name">Ranger</h1>
+          <!-- Altre informazioni sul profilo, se necessario -->
+        </section>
+    
+        <!-- Sezione Social -->
+        <section id="social">
+          <div class="social">
+            <h2>Social: </h2>
+            <div id="icon-social"><a href="https://youtube.com/@RangerQuelloVero" target="_blank"><i class="fab fa-youtube social-icon"></i></a></div>
+            <div id="icon-social"><a href="https://www.instagram.com/ranger_quello_vero/?hl=it" target="_blank"><i class="fab fa-instagram social-icon"></i></a></div>
+            <div id="icon-social"><a href="https://www.twitch.tv/rangerquellover" target="_blank"><i class="fab fa-twitch social-icon"></i></a></div>
+            <div id="icon-social"><a href="https://s.team/p/fwpm-jfbd/gtvnvttk" target="_blank"><i class="fab fa-steam social-icon"></i></a></div>
+            <div id="icon-social"><a href="https://github.com/RangerQuelloVero" target="_blank"><i class="fab fa-github social-icon"></i></a></div>
+          </div>
+        </section>
+    
+        <!-- Sezione Bio -->
+        <section id="bio">
+          <h2>Biografia</h2>
+          <p class="animated fadeIn">Sono un appassionato di hardware e design con un cuore che batte per il gaming. Ho dedicato innumerevoli ore a esplorare un universo di titoli diversi, ognuno con la sua unica sfida e storia (visita il mio profilo Steam per visualizare la mia libreria).<br>
+            <br>
+            Nel corso del mio viaggio, ho assunto diverse posizioni: <br>
+            - Come <strong>YouTuber</strong>, ho condiviso le mie avventure di gioco.<br>
+            - Come <strong>Streamer su Twitch</strong>, ho portato i miei contenuti (anche trash) in tempo reale, sperimentando un nuovo modo di di fare contenuti e interagire con il publico.<br>
+            - Come <strong>Gestore di un server Discord</strong>, ho costruito e gestito una mia comunità di gamer, condividento le mie passioni e il mio sapere.<br>
+            <br>
+            Nonostante non tutti i miei progetti abbiano raggiunto il successo sperato, ogni tentativo è stato un gradino verso l'apprendimento e l'acquisizione di preziose esperienze. Credo fermamente che ogni fallimento sia solo un altro passo verso il successo.
+          </p>
+        </section>
+    
+        <!--Sezione Progetti -->
+        <section id="progetti">
+          <h2>I Miei Progetti</h2>
+    
+          <!-- Progetto GTX -->
+          <div class="progetto">
+            <object id="logoGTX" type="image/svg+xml" data="../sito/img/logoGTX.svg" width="100" height="100"></object>
+            <div class="descrizione">
+              <h2>Gaming Tecnology eXperience</h2>
+              <p>Progetto in stendby a tempo indeterminato, obbiettivo pricipale era un hub dove un gruppo condivideva progettiti, esperieze e content</p>
+              <a href="https://discord.gg/jr8QxmP4a8" class="button" target="_blank"><i class="fab fa-discord social-icon"></i></a>
+            </div>
+          </div>
+    
+          <!-- Progetto 2 -->
+          <!--<div class="progetto">
+            <img src="img/progetto2.jpg" alt="Progetto 2">
+            <div class="descrizione">
+              <h3>Nome Progetto 2</h3>
+              <p>Descrizione del progetto. Puoi includere link, dettagli tecnici, ecc.</p>
+              <a href="#">Link al Progetto</a>
+            </div>
+          </div> -->
+    
+        </section>
+    
+        <!-- Footer -->
+        <footer>
+          <p>&copy; 2023 Alexandru "Ranger" Pista</p>
+        </footer>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script>
+    VANTA.NET({
+        el: "#BG",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0xebd5af,
+        backgroundColor: 0x1d1d22
+    })
+    </script>
+    
+
+</body>
+</html>
