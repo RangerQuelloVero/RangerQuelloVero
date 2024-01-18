@@ -1,0 +1,237 @@
+/* Importa il tuo font */
+@font-face {
+    font-family: 'Gotham Black'; /* Specifica il nome che vuoi assegnare al tuo font */
+    src: url('../font/Gotham\ Black.otf') format('otf'),
+
+}
+
+/* Usa il tuo font personalizzato per gli elementi desiderati */
+body {
+    font-family: 'NomeDelTuoFont', sans-serif; /* Usa il tuo font per il testo del corpo */
+    background-color: #1d1d22;
+}
+
+h1, h2, h3 {
+    font-family: 'Gotham Black', sans-serif; /* Usa il tuo font per gli heading */
+}
+
+
+/* Stili CSS per il tuo sito */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background-image: url('../img/bg.gif');*/
+    background-size: cover; /* Adatta l'immagine per coprire l'intero sfondo */
+    background-position: center; /* Centra l'immagine */
+    color: #333;
+    overflow: auto;
+}
+
+/* BG */
+
+#BG {
+    padding: 30px;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(87, 87, 87, 0.481); /* Aggiunge uno sfondo scuro trasparente al contenuto */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#name {
+    margin-top:auto;
+
+}
+
+#logoGTX {
+    fill: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+#pfp {
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+#profilo {
+    text-align: left;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+/* parte dei social*/
+
+#social ul {
+    list-style-type:armenian;
+    padding: 0;
+}
+
+#icon-social {
+    margin-left: 10px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+/* text */
+
+h1 {
+    font-size: 36px;
+    color: #fff;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 26px;
+}
+
+p {
+    text-align: justify;
+    color: #d5d5d5;
+    font-size: 16px;
+}
+
+#progetti {
+    text-align: left;
+    vertical-align: middle;
+}
+
+.progetto {
+    width: calc(33.333% - 20px);
+    margin: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.progetto:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 5px;
+    transform: scale(1.05);
+}
+
+/* Stile per le icone dei social */
+.social-icon {
+    font-size: 32px;
+    color: #ffffff; 
+}
+
+footer{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+/* Stile per la classe 'button' */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #4caf8c; /* Colore di sfondo del pulsante */
+  color: #fff; /* Colore del testo del pulsante */
+  border: 3px solid rgb(58, 74, 77); /* Bordo del pulsante */
+  border-radius: 5px; /* Angoli arrotondati */
+  transition: background-color 0.3s, color 0.3s; /* Transizione per una migliore esperienza utente */
+  margin: 10px;/*margine esterno*/
+
+}
+  
+/* Stile per il cambio di colore al passaggio del mouse */
+.button:hover {
+  background-color: rgb(0, 187, 184); /* Cambia il colore di sfondo al passaggio del mouse */
+  color: #fff; /* Cambia il colore del testo al passaggio del mouse */
+  border: 3px solid #00000084; /* Cambia il colore del bordo al passaggio del mouse */
+}
+
+/*Schermata di caricamento*/
+#loading_screen {
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #1d1d22;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
+  
+  .spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #623c21;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }  
+
+  /*animazione*/
+  .social-icon:hover {
+    transform: scale(1.2);
+    transition: transform .2s;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .progetto:hover {
+    transform: scale(1.05);
+    transition: transform .2s;
+  }
+
+  footer p:hover {
+    color: #3498db;
+    transition: color .2s;
+  }
